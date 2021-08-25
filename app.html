@@ -71,7 +71,7 @@
                             <input type="number" id="InterestRate" class="form-control" placeholder="Interest Rate" value=0 aria-label="Interest Rate">
                         </div>
                         <div class="col-12 text-end">
-                            <button type="submit" class="btn btn-primary">Calculate</button>
+                            <button type="submit" id="btnSubmit" class="btn btn-primary">Calculate</button>
                         </div>
                     </div>
                 </div> 
@@ -93,13 +93,6 @@
                             <div class="col-6">Total Cost </div>
                             <div class="col-6">Money </div>
                         </div>
-
-                    
-
-
-
-
-
 
                 </div>
             </div>
@@ -161,7 +154,9 @@
     integrity="sha384-cVKIPhGWiC2Al4u+LWgxfKTRIcfu0JTxR+EQDz/bgldoEyl4H0zUF0QKbrJ0EcQF" crossorigin="anonymous">
 </script>
 <script src="/js/site.js"></script>
-
+<script>
+    document.getElementById("btnSubmit").addEventListener("click", getValues);
+</script>
 </body>
 
 
